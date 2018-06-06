@@ -27,9 +27,19 @@ public class Television {
     public boolean getTurnOn() {
         return this.turnOn; 
     }
-    
+   
     public void setTurnOn(boolean newTurnOn) {
         this.turnOn = newTurnOn;
     }
+    
+    public void showData() {
+        System.out.println("Current TV programme is: " +getCurrentProgram());
+        System.out.println("TV is turned on(true -ON, false -OFF): " +getTurnOn());
+        System.out.println("Current TV volume is: " +getVolume());
+        System.out.println("");
+    }
+    
+    
+    
     
 }
